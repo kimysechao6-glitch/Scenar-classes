@@ -13,8 +13,16 @@ public class Classesjava {
     /**
      * @param args the command line arguments
      */
+    package classesjava;
+
+public class Classesjava {
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        String marque = "Peugeot";
+        String modele = "208";
+        int annee = 2021;
+        int prix = 14500;
+        System.out.println("marque:" + marque+",modele"+modele);
     }
     
 }
