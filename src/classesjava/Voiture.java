@@ -14,6 +14,5 @@ public class Voiture {
     String modele;
     int annee;
     double prix;
-}
     }
 }
