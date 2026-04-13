@@ -15,15 +15,21 @@ public class Classesjava {
      */
     package classesjava;
 
-public class Classesjava {
+public class Main {
     public static void main(String[] args) {
-        Pneu p1 = new Pneu(205, 55, 16, "été");
+        Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500);
+System.out.println("Prix initial : " + v1.prix + " €");
 
-        Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500, p1);
+        v1.appliquerReduction(10);
+System.out.println("Après -10% : " + v1.prix + " €");
 
-        System.out.println("Voiture : " + v1.marque + " " + v1.modele);
-        System.out.println("Pneu    : " + v1.pneu.largeur + "/" + v1.pneu.hauteur + " R" + v1.pneu.diametre + " " + v1.pneu.type);
-}
+
+        Voiture v2 = new Voiture("Peugeot", "208", 2021, 14500);
+        v2.appliquerReduction(20);
+System.out.println("Après -20% : " + v2.prix + " €");
+
+        Voiture v3 = new Voiture("Peugeot", "208", 2021, 14500);
+        v3.appliquerReduction(30);
+System.out.println("Après -30% : " + v3.prix + " €");
     }
-    
 }
