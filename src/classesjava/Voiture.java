@@ -12,19 +12,17 @@ package classesjava;
 package classesjava;
 
 public class Voiture {
+    // Attributs
     String marque;
     String modele;
     int annee;
-    String carburant;
     double prix;
-    Pneu pneu;
 
-    public Voiture(String marque, String modele, int annee, double prix, Pneu pneu) {
+    // Constructeur
+    public Voiture(String marque, String modele, int annee, double prix) {
         this.marque = marque;
         this.modele = modele;
         this.annee = annee;
         this.prix = prix;
-        this.pneu = pneu;
     }
 }
-    }
